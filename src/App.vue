@@ -1,94 +1,25 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import axios from "axios"
-import { onMounted } from 'vue';
 
 
 
-onMounted(async () => {
-  const res = await axios.get("/api/test");
-  console.log(res.data);
-})
+
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+<div class="flex flex-col gap-y-8 items-center justify-start">
+  <h1 class="text-orange-400 text-4xl font-bold text-center">Primary heading 1</h1>
+  <h2 class="text-lime-400 text-4xl font-medium text-center ">Secondary heading 1</h2>
+  <h3 class="text-neutral-900 text-4xl font-normal text-center ">Main text</h3>
+  <h3 class="text-neutral-50 text-4xl text-center  bg-orange-400">Main text 2</h3>
+  <h3 class="text-neutral-50 text-4xl text-center  bg-lime-400">Main text 3</h3>
+  <button class="text-neutral-50 text-2xl text-center font-medium px-4 py-2 leading-none rounded-md bg-lime-400">Button 1</button>
+  <button class="text-neutral-50 text-xl text-center px-2 py-1 leading-none rounded-md hover:bg-red-50 hover:text-red-500 transition-all duration-500 bg-red-500  ">Button 2</button>
+  <input type="text" placeholder="input" class="appearance-none montserrat outline-none text-neutral-50 text-xl px-2 py-2 self-stretch mx-16 placeholder-red-50 focus-visible:placeholder-neutral-600 focus-visible:text-neutral-900 leading-none rounded-md focus-visible:bg-red-50  transition-all duration-500 bg-red-500">
+  <input type="text" placeholder="Input" class="appearance-none montserrat outline-none font-medium text-xl px-2 py-2 self-stretch mx-16 text-neutral-900 placeholder:text-neutral-400 leading-none rounded-md bg-red-50 border-red-500 border-2">
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+</div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 </style>
