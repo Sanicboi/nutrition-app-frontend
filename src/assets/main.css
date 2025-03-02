@@ -13,3 +13,26 @@
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
 }
+
+
+.input-1 {
+  @apply appearance-none;
+  @apply outline-none;
+  @apply border-none;
+  @apply bg-neutral-100;
+  @apply px-8;
+  @apply py-4;
+  @apply rounded-lg;
+  @apply text-lg;
+  @apply placeholder-neutral-500;
+}
+
+.btn-1 {
+  @apply px-8;
+  @apply py-4;
+  @apply rounded-lg;
+  @apply text-xl;
+  @apply font-semibold;
+  @apply bg-green-500;
+  @apply text-white;
+}
