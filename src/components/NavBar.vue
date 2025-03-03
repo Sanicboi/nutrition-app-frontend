@@ -1,5 +1,5 @@
 <template>
-    <nav class="sticky bottom-0 flex flex-row justify-between align-center">
+    <nav class="sticky bottom-0 flex flex-row justify-between align-center bg-white pb-4">
         <div class="flex p-2 rounded-lg flex-col text-center items-center cursor-pointer" :class="isSelected('/training') ? 'sel' : ''" @click="router.push('/training')">
             <i class="ri-run-line text-2xl"></i>
             <p class="font-semibold text-lg leading-none">Training</p>

@@ -1,5 +1,5 @@
 <template>
-    <form class="flex flex-col items-center py-16 px-8">
+    <form @submit.prevent class="flex flex-col items-center py-16 px-8">
         <img src="/favicon.ico" alt="" width="60px">
         <h1 class="text-4xl font-bold mt-16">Sign up</h1>
         <label for="username" class="text-xl font-normal text-neutral-600 text-left self-stretch mt-6">Username</label>
